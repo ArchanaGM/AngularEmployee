@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Archana",
+      "lastName": "Ganesan",
+      "email": "test@gmail.com",
+      "dob": "2016-02-01T18:30:00.000Z",
+      "gender": "female",
+      "education": "Graduate",
+      "company": "Bountoeus",
+      "experience": 4,
+      "package": 10,
+      "id": 1
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Immanual",
+      "email": "sam@gmail.com",
+      "dob": "2005-06-06T18:30:00.000Z",
+      "gender": "male",
+      "education": "PostGraduate",
+      "company": "Infosys",
+      "experience": 7,
+      "package": 25,
+      "id": 2
+    },
+    {
+      "firstName": "Arun",
+      "lastName": "RM",
+      "email": "arun@gmail.com",
+      "dob": "2003-07-15T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "CTS",
+      "experience": 8,
+      "package": 15,
+      "id": 3
+    }
+  ]
+}
