@@ -1,0 +1,27 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.main-body {
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1248px;
+  mat-form-field {
+    width: 100%;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
+.canvas-pointer {
+  cursor: pointer;
+}
+.text-primary {
+  color: #2196f3;
+}
+mat-icon {
+  padding-left: 50px;
+}
+.example-card {
+  margin-bottom: 8px;
+}

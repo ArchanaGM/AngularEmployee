@@ -52,6 +52,80 @@
       "experience": 8,
       "package": 15,
       "id": 3
+    },
+    {
+      "firstName": "Priya",
+      "lastName": "GR",
+      "email": "priya@gmail.com",
+      "dob": "2014-02-09T18:30:00.000Z",
+      "gender": "female",
+      "education": "Graduate",
+      "company": "Bosch",
+      "experience": 3,
+      "package": 8,
+      "id": 4
+    },
+    {
+      "firstName": "Kartik",
+      "lastName": "Raja",
+      "email": "kartik@gmail.com",
+      "dob": "2006-02-28T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "Lister",
+      "experience": 5,
+      "package": 13,
+      "id": 6
+    },
+    {
+      "firstName": "Hari",
+      "lastName": "Srinivasan",
+      "email": "hari@yahoo.com",
+      "dob": "1992-06-03T18:30:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "Flex",
+      "experience": 8,
+      "package": 19,
+      "id": 7
+    }
+  ],
+  "organisation": [
+    {
+      "organisationName": "Bounteous",
+      "website": "www.bounteous.com",
+      "telephone": "123456789",
+      "id": 1
+    },
+    {
+      "organisationName": "Flextronics",
+      "website": "www.flex.com",
+      "telephone": "38784032",
+      "id": 2
+    },
+    {
+      "organisationName": "Infosys",
+      "website": "www.infosys.com",
+      "telephone": "2345980657",
+      "id": 3
+    },
+    {
+      "organisationName": "ABC Pvt Ltd",
+      "website": "www.abc.com",
+      "telephone": "2345980657",
+      "id": 4
+    },
+    {
+      "organisationName": "CTS",
+      "website": "www.cognizant.com",
+      "telephone": "568564345",
+      "id": 5
+    },
+    {
+      "organisationName": "Trimble",
+      "website": "www.trimble.com",
+      "telephone": "234768456",
+      "id": 6
     }
   ]
 }

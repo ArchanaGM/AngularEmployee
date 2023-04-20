@@ -138,3 +138,11 @@ add \_coreService in constructor
 add this.coreService in deleteEmployee
 
 similar steps to all alerts
+
+# Install ng2 charts
+
+npm install --save ng2-charts
+
+# Install chart.js library
+
+npm install --save chart.js

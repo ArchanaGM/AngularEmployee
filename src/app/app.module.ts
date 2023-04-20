@@ -21,9 +21,24 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { StaffsComponent } from './staffs/staffs.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { OverviewComponent } from './overview/overview.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
-  declarations: [AppComponent, EmpAddEditComponent],
+  declarations: [
+    AppComponent,
+    EmpAddEditComponent,
+    DashboardComponent,
+    StaffsComponent,
+    ContactsComponent,
+    OverviewComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -44,6 +59,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatPaginatorModule,
     MatSortModule,
     MatSnackBarModule,
+    MatTabsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

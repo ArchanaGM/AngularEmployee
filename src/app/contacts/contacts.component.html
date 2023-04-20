@@ -1,0 +1,63 @@
+<span class="example-spacer"></span>
+<div class="main-body">
+  <!-- <mat-grid-list cols="3" rowHeight="3:1">
+    <mat-grid-tile>CUSTOMERS / SUPPLIERS </mat-grid-tile>
+    <mat-grid-tile>SALES LEAD</mat-grid-tile>
+  </mat-grid-list> -->
+  <mat-tab-group dynamicHeight>
+    <mat-tab label="Organisation Details">
+      <div class="table-container">
+        <table mat-table [dataSource]="dataSource" matSort>
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
+            <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="organisationName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+              Organisation Name
+            </th>
+            <td mat-cell *matCellDef="let row">{{ row.organisationName }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="website">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Website</th>
+            <td mat-cell *matCellDef="let row">{{ row.website }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="telephone">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+              Telephone Name
+            </th>
+            <td mat-cell *matCellDef="let row">{{ row.telephone }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>
+            <td mat-cell *matCellDef="let row">
+              <button
+                mat-icon-button
+                color="warn"
+                (click)="deleteOrganisation(row.id)"
+              >
+                <mat-icon>delete</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+        <mat-paginator
+          [pageSizeOptions]="[5, 10, 25, 100]"
+          aria-label="Select page of users"
+        ></mat-paginator>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Organisation Contacts">
+      <!-- Reusing the Staff Component-->
+      <app-staffs></app-staffs>
+    </mat-tab>
+  </mat-tab-group>
+</div>

@@ -22,4 +22,11 @@ export class EmployeeService {
   deleteEmployee(id: number): Observable<any> {
     return this._http.delete(`http://localhost:3000/employees/${id}`);
   }
+
+  getOrganisationList(): Observable<any> {
+    return this._http.get('http://localhost:3000/organisation');
+  }
+  deleteOrganisation(id: number): Observable<any> {
+    return this._http.delete(`http://localhost:3000/organisation/${id}`);
+  }
 }
