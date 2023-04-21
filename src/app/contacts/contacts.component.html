@@ -7,6 +7,15 @@
   <mat-tab-group dynamicHeight>
     <mat-tab label="Organisation Details">
       <div class="table-container">
+        <mat-form-field>
+          <mat-label>Filter</mat-label>
+          <input
+            matInput
+            (keyup)="applyFilter($event)"
+            placeholder="Ex. Archana"
+            #input
+          />
+        </mat-form-field>
         <table mat-table [dataSource]="dataSource" matSort>
           <ng-container matColumnDef="id">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>

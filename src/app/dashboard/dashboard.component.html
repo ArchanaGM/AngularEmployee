@@ -1,4 +1,14 @@
 <span class="example-spacer"></span>
 <div class="main-body">
   <p>dashboard works!</p>
+  <h2>Table one</h2>
+  <app-table [tableColumns]="tableColumns" [tableData]="tableData"> </app-table>
+
+  <h2>Table Two</h2>
+  <app-table
+    [tableColumns]="anotherTableColumns"
+    [tableData]="anotherTableData"
+  >
+  
+  </app-table>
 </div>

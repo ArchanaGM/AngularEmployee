@@ -45,7 +45,7 @@ export class ContactsComponent implements OnInit {
       },
     });
   }
-  /* Delete Employee from table using ID */
+  /* Delete Organisation from table using ID */
   deleteOrganisation(id: number) {
     this._empService.deleteOrganisation(id).subscribe({
       next: (res) => {
@@ -54,5 +54,15 @@ export class ContactsComponent implements OnInit {
       },
       error: console.log,
     });
+  }
+
+  /* Filtertion on table */
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
   }
 }

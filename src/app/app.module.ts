@@ -29,6 +29,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { OverviewComponent } from './overview/overview.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MatListModule } from '@angular/material/list';
     StaffsComponent,
     ContactsComponent,
     OverviewComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
